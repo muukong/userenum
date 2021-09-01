@@ -20,7 +20,6 @@ gantry
 gold
 greedo
 han
-han
 human
 imperial
 intercom
