@@ -1,0 +1,31 @@
+
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header', {authenticated:authenticated}) %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <% if(authenticated){ %>
+            <p>Welcome to the Dark Side, <%= username %>!</p>
+        <% } else{ %>  
+            <p>Welcome to the Dark Side</p
+        <% } %>
+    </div>
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>
+
