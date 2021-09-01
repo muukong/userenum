@@ -74,7 +74,6 @@ app.post('/login', (req, res) => {
     
     const username = req.body.username;
     const password = req.body.password;
-    console.log(password);
     if ( !usernames.includes(username) ) {
              res.render('pages/login', {
                 authenticated: req.session.authenticated,
@@ -82,7 +81,7 @@ app.post('/login', (req, res) => {
                 wrongPassword: false
             });
     }
-    else if ( username == 'vader' && password == 'batman'  ) {
+    else if ( username == 'vader' && password == 'DarkSide2021'  ) {
             req.session.authenticated = true;
             req.session.username = username;
             res.redirect('/');        
