@@ -104,10 +104,16 @@ app.get('/inbox', checkUserAuthenticated, function(req, res) {
 
     const result = [
         {
-            '_id':  1,
+            '_id':  2,
             'sender': 'Galactic Empire Quality Control Team',
             'message-subject': 'Exhaust Port',
             'message': 'We have detected some issues with the exhaust port of the death star. Threat seems minimal, will follow up with more details.'
+        },
+        {
+            '_id':  1,
+            'sender': 'palpatine',
+            'message-subject': 'Dark Mode',
+            'message': "It's embarassing that the Dark Side messenger does not have a dark mode. Let's put everything else on hold and focus on that."
         }
     ];
 
